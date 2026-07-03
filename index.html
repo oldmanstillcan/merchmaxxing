@@ -215,7 +215,7 @@ footer .sig .xx{color:var(--acid)}
 </header>
 
 <div class="dropbar reveal d3">
-  <h2><span class="no">DROP 001</span> — TAOER WRECKORDS</h2>
+  <h2><span class="no">DROP 001</span> — LA VIDA DEPIN</h2>
   <span class="status" id="drop-status">LOADING…</span>
 </div>
 
@@ -237,7 +237,7 @@ footer .sig .xx{color:var(--acid)}
     an AOK Enterprises operation · fulfillment by Printful · checkout by Helio (MoonPay)
   </div>
   <div>
-    drop 001: TAOER WRECKORDS — the label your timeline warned you about<br>
+    drop 001: LA VIDA DEPIN — a Taoer Wreckords production<br>
     no refunds on taste · sizes run true · contact: @taoerwreckords
   </div>
 </footer>
@@ -249,17 +249,17 @@ footer .sig .xx{color:var(--acid)}
 const PRODUCTS = [
   {
     num: "TW-001",
-    name: "Reggae Chart Shirt",
-    desc: "Bob Marley & The Traders. The chart only goes up if the vibe does. First pressing from the Taoer Wreckords catalog.",
-    price: "$35 USDC",
+    name: "La Vida DePIN × World Mobile Hat",
+    desc: "The collab lid. La Vida DePIN meets World Mobile — wear the network you help run. The hat that started the whole drop.",
+    price: "$30 USDC",
     stock: "PRINT-ON-DEMAND",
     img: null,            // → assets/tw-001.png when mockup exists
     paylink: null
   },
   {
     num: "TW-002",
-    name: "Wreckords Logo Tee",
-    desc: "The label mark, chest placement, zero explanation offered. For people who answer \"what's Taoer?\" with \"exactly.\"",
+    name: "La Vida DePIN — Women's Tee",
+    desc: "Bella+Canvas cut for her. Living the DePIN life, coverage included. Runs true, prints clean.",
     price: "$35 USDC",
     stock: "PRINT-ON-DEMAND",
     img: null,
@@ -267,10 +267,19 @@ const PRODUCTS = [
   },
   {
     num: "TW-003",
-    name: "La Vida DePIN — Archive",
-    desc: "The hat walked so the shirts could run. Archive slot reserved — watch this space.",
-    price: "TBA",
-    stock: "ARCHIVE",
+    name: "La Vida DePIN — Unisex Tee",
+    desc: "The daily driver. La Vida DePIN across the chest — for everyone quietly running infrastructure their neighbors have never heard of.",
+    price: "$35 USDC",
+    stock: "PRINT-ON-DEMAND",
+    img: null,
+    paylink: null
+  },
+  {
+    num: "TW-004",
+    name: "La Vida DePIN Hoodie — Mine Your Own Business",
+    desc: "La Vida DePIN on the left chest. MINE YOUR OWN BUSINESS across the back. Answers questions before they're asked.",
+    price: "$60 USDC",
+    stock: "PRINT-ON-DEMAND",
     img: null,
     paylink: null
   }
@@ -301,7 +310,7 @@ document.getElementById("drop-status").textContent =
   liveCount ? `${liveCount} LIVE / ${PRODUCTS.length} LISTED` : "DROP LOADING — SOON";
 
 /* ticker */
-const items = ["USDC ACCEPTED","SETTLES ON SOLANA","SHIPS WORLDWIDE","NO BANK NEEDED","PAY IN WHAT YOU HOLD","DROP 001 — TAOER WRECKORDS","MERCHMAXXING.XYZ"];
+const items = ["USDC ACCEPTED","SETTLES ON SOLANA","SHIPS WORLDWIDE","NO BANK NEEDED","PAY IN WHAT YOU HOLD","DROP 001 — LA VIDA DEPIN","MERCHMAXXING.XYZ"];
 const half = items.map(t => `<span>${t} ▮</span>`).join("");
 document.getElementById("ticker").innerHTML = half + half;
 </script>
